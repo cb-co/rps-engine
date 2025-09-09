@@ -8,7 +8,12 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  return prompt("What's your choice? (Rock, paper, scissors)").toLowerCase();
+  const choice = prompt(
+    "What's your choice? (Rock, paper, scissors)",
+    ""
+  ).toLowerCase();
+
+  return choice || getComputerChoice();
 }
 
 function playRound(humanChoice, computerChoice) {
