@@ -52,7 +52,7 @@ function playGame() {
 
     playRound(humanSelection, computerSelection);
 
-    if (humanScore + computerScore === 5) break;
+    if (humanScore === 3 || computerScore === 3) break;
   }
 
   if (humanScore === computerScore) {
