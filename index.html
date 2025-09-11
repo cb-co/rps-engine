@@ -3,8 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <p>Score</p>
+      <span>C</span> - <span>H</span>
+      <br />
+      <span id="computer-score">0</span> - <span id="human-score">0</span>
+    </div>
+    <br />
+    <div>
+      <button class="choice" data-choice="rock">Rock</button>
+      <button class="choice" data-choice="paper">Paper</button>
+      <button class="choice" data-choice="scissors">Scissors</button>
+    </div>
+  </body>
 </html>
